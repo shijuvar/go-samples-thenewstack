@@ -83,7 +83,8 @@ func main() {
 		"Royal Orchid",
 		"Bangalore",
 		time.Date(2015, time.February, 19, 9, 0, 0, 0, time.UTC),
-		[]People{shiju,satish,alex} }
+		[]People{shiju,satish,alex},
+	}
 	//get details of meetup people
 	meetup.MeetupPeople()
 }
