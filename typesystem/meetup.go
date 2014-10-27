@@ -29,8 +29,8 @@ type Speaker struct {
 }
 //overrides GetDetails
 func (s Speaker) GetDetails() {
-	fmt.Printf("[Name: %s, Age: %d, City: %s, Phone: %s]\n",
-		s.name,s.age, s.city, s.phone)
+	//Call person GetDetails
+	s.Person.GetDetails()
 	fmt.Println("Speaker talks on following technologies:")
 	for _, value := range s.speaksOn {
 		fmt.Println(value)
@@ -46,8 +46,8 @@ type Organizer struct {
 }
 //overrides GetDetails
 func (o Organizer) GetDetails() {
-	fmt.Printf("[Name: %s, Age: %d, City: %s, Phone: %s]\n",
-		o.name,o.age, o.city, o.phone)
+	//Call person GetDetails
+	o.Person.GetDetails()
 	fmt.Println("Organizer, conducting following Meetups:")
 	for _, value := range o.meetups {
 		fmt.Println(value)
